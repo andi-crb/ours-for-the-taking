@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Ours for the Taking</title>
     <script>
-        $(document).ready(function(){
-            $("#czero").click(function(){
-                $("#czero").hide();
-                if () {
-                  $("#a").show();
-                } else {
-                  $("#b").show();
-            });
+      var today = new Date()
+      var curHr = today.getHours()
+      $(document).ready(function(){
+        $("#czero").click(function(){
+          $("#czero").hide();
+          if (curHr < 12) {
+            $("#a").show();
+            console.log("a")
+          } else {
+            $("#b").show();
+            console.log("b")
+          }
+         });
         });
     </script>
   </head>
