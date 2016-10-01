@@ -11,13 +11,13 @@
       var today = new Date()
       var curHr = today.getHours()
       $(document).ready(function(){
-        $("#czero").click(function(){
-          $("#czero").hide();
+        $(".czero").click(function(){
+          $(".czero").hide();
           if (curHr < 12) {
-            $("#a").show();
+            $(".a").show();
             console.log("a")
           } else {
-            $("#b").show();
+            $(".b").show();
             console.log("b")
           }
          });
