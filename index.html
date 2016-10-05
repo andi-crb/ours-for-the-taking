@@ -36,6 +36,26 @@
           console.log("bb")
           $(".bb").show();
         });
+        $(".caa").click(function(){
+          $(".caa").hide();
+          if (curDay % 2 == 1) {
+            $(".aaa").show();
+            console.log("aaa")
+          } else {
+            $(".aab").show();
+            console.log("aab")
+          }
+         });
+         $(".cbb").click(function(){
+          $(".cbb").hide();
+          if (curDay % 2 == 1) {
+            $(".bba").show();
+            console.log("bba")
+          } else {
+            $(".bbb").show();
+            console.log("bbb")
+          }
+         });
       });
     </script>
   </head>
