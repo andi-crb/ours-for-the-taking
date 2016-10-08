@@ -12,6 +12,7 @@
       var today = new Date()
       var curHr = today.getHours()
       var curDay = today.getDay()
+      var ranNum = Math.random()
       console.log("day", curDay)
       $(document).ready(function(){
         $(".a").hide();
@@ -32,32 +33,58 @@
          });
         $(".ca").click(function(){
         $(".ca").hide();
-          console.log("aa")
           $(".aa").show();
         });
         $(".cb").click(function(){
         $(".cb").hide();
-          console.log("bb")
           $(".bb").show();
         });
         $(".caa").click(function(){
           $(".caa").hide();
           if (curDay % 2 == 1) {
             $(".aaa").show();
-            console.log("aaa")
           } else {
             $(".aab").show();
-            console.log("aab")
           }
          });
          $(".cbb").click(function(){
           $(".cbb").hide();
           if (curDay % 2 == 1) {
             $(".bba").show();
-            console.log("bba")
           } else {
             $(".bbb").show();
-            console.log("bbb")
+          }
+         });
+         $(".caaa").click(function(){
+          $(".caaa").hide();
+          if (ranNum < 0.5) {
+            $(".aaaa").show();
+          } else {
+            $(".aaab").show();
+          }
+         });
+        $(".caab").click(function(){
+          $(".caab").hide();
+          if (ranNum < 0.5) {
+            $(".aaba").show();
+          } else {
+            $(".aabb").show();
+          }
+         });
+        $(".cbba").click(function(){
+          $(".cbba").hide();
+          if (ranNum < 0.5) {
+            $(".bbaa").show();
+          } else {
+            $(".bbab").show();
+          }
+         });
+        $(".cbbb").click(function(){
+          $(".cbbb").hide();
+          if (ranNum < 0.5) {
+            $(".bbba").show();
+          } else {
+            $(".bbbb").show();
           }
          });
       });
