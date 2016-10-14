@@ -6,35 +6,195 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <link rel="stylesheet" href="style.css">
     <title>Ours for the Taking</title>
+    <script src="https://use.fontawesome.com/912a8dee9f.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
       var today = new Date()
       var curHr = today.getHours()
+      var curDay = today.getDay()
+      var ranNum = Math.random()
+      console.log("day", curDay)
       $(document).ready(function(){
+        $(".a").hide();
+        $(".b").hide();
+        $(".aa").hide();
+        $(".bb").hide();
+        $(".aaa").hide();
+        $(".aab").hide();
+        $(".bba").hide();
+        $(".bbb").hide();
         $(".czero").click(function(){
           $(".czero").hide();
           if (curHr < 12) {
             $(".a").show();
-            console.log("a")
           } else {
             $(".b").show();
-            console.log("b")
           }
          });
+        $(".ca").click(function(){
+        $(".ca").hide();
+          $(".aa").show();
         });
+        $(".cb").click(function(){
+        $(".cb").hide();
+          $(".bb").show();
+        });
+        $(".caa").click(function(){
+          $(".caa").hide();
+          if (curDay % 2 == 1) {
+            $(".aaa").show();
+          } else {
+            $(".aab").show();
+          }
+         });
+         $(".cbb").click(function(){
+          $(".cbb").hide();
+          if (curDay % 2 == 1) {
+            $(".bba").show();
+          } else {
+            $(".bbb").show();
+          }
+         });
+         $(".caaa").click(function(){
+          $(".caaa").hide();
+          if (ranNum < 0.5) {
+            $(".aaaa").show();
+          } else {
+            $(".aaab").show();
+          }
+         });
+        $(".caab").click(function(){
+          $(".caab").hide();
+          if (ranNum < 0.5) {
+            $(".aaba").show();
+          } else {
+            $(".aabb").show();
+          }
+         });
+        $(".cbba").click(function(){
+          $(".cbba").hide();
+          if (ranNum < 0.5) {
+            $(".bbaa").show();
+          } else {
+            $(".bbab").show();
+          }
+         });
+        $(".cbbb").click(function(){
+          $(".cbbb").hide();
+          if (ranNum < 0.5) {
+            $(".bbba").show();
+          } else {
+            $(".bbbb").show();
+          }
+         });
+      });
     </script>
   </head>
   <body>
     <div class="row">
       <h1>Ours for the Taking</h1>
-      <p>by A.C. Buchanan</p>
+      <p text-align="center">by <a href="http://www.acbuchanan.org">A.C. Buchanan</a></p>
     </div>
     <div class="row">
       <p>You are the first child to be born on Atema Six. Your birth heralds a boom that transforms this new world from base to colony, from a workplace to a home. Within months, the corridors are full of burbling and screaming, of sleep-hazed parents; a few months more and time is punctuated by the stomping of tiny feet on the reinforced glass, as you learn to walk in a gravity your small bodies have not evolved for. Schedules are reworked and the rooms designated for a nursery and school are cleared. The volume of messages back to Earth triples. Some wonder if they have made a terrible mistake, trying to live out here, if this is really a place to raise children. Others feel as if they have finally come home.</p>
       <p>For you, this is the only world you know and if you were to leave - as you may do one day - you may become disorientated, homesick, as your parents were on the long journey and their first months here. You can’t articulate it yet, but you know this place, this sprawling network of reinforced glass rooms and corridors above the swirling gas below, the tremors that bounce through you each time the extraction platform is raised and lowered, the smell of decontamination fluids that springs to every adult you know; this, this is your home.</p>
       <p>Every few months a tanker arrives. The screens in the corridors count down the hours, and on the day the corridors are hung with streamers, and lollies are hidden around the common areas for you to find. Once unloading is complete, the adults gather for wine and cake in the canteen. You’re allowed to stay up all night while the tankers are here, but usually you fall asleep watching cartoons with your friends and are carried into bed, ice-cream wiped gently from your face.</p>
       <p>Tankers bring more than celebration with them; there are also new clothes, food supplies, and replacement parts for non-essential systems which have deteriorated since the last visit. Sometimes there’s a teacher, who will stay until the next ship, interspersing your programme of remote learning with new stories.</p>
-      <span class="continue czero"><p>Continue</p></span>
+      <span class="continue czero"><button>Continue</button></span>
+    </div>
+    <div class="row">
+      <div class="a">
+        <h2><i class="fa fa-rocket" aria-hidden="true"></i></h2>
+        <p>"Where would you live if you could choose?" your mother asks you. She’s out of her overalls and into a long dress; she and dad must be going dancing tonight. Her short hair smells of shampoo, a scent called honeysuckle, rather than the usual contamination fluids. "Would you prefer to live here, on Atema Six, or on Earth?"</p>
+        <p>As she says the names of the planets, she projects them in front of you. Earth is blue and green and brown, dulled by clouds; Atema Six glows with brilliant tones of swirling turquoise and deep green. When you squint, you think you can make out the base you live on, shining glass above the world. You suspect there’s a right answer and a wrong answer, but you’re not sure what they are.</p>
+        <p>You hesitate, the tip of your finger wavering between worlds. Your decision will be of no consequence; no-one decides their fate on the opinion of such a small child. And yet you feel there may be other consequences, too far away to see. So you answer with questions. You ask where each of your friends will be and what kind of lollies you can get on each planet and whether there are tanker days on earth, bombarding the air with possibilities.</p>
+        <p>"It’s not an easy decision, is it?" she says to you, and you shake your head, hoping for distraction, hoping to not have to make choices. The door mechanism hisses and your father enters. He pulls on a shirt and trousers, and your parents turn the monitor on and give you a snack and a bottle of water, even though you’re old enough to get your own.</p>
+        <p>When they leave, you press the button that draws open the curtain along the long glass wall, and you sit on your parents’ bed in near-darkness, with just the hint of your reflection visible in the window. It’s transposed against the blue and green gas licking up, against the dark of space, punctuated by stars.</p>
+        <p>You know that this is your home. An eternity on this world stretches out before you. You’re not sure if that’s a good thing, but it is a safe thing. You fall asleep on your parents’ bed, the curtains open, and when they come home, late, your mother scoops you up and tucks you into your own bed and you are safe.</p>
+        <span class="continue ca"><button>Continue</button></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="b">
+        <h2><i class="fa fa-rocket" aria-hidden="true"></i></h2>
+        <p>"Where would you live if you could choose?" your mother asks you. She’s out of her overalls and into a long dress; she and dad must be going dancing tonight. Her short hair smells of shampoo, a scent called honeysuckle, rather than the usual contamination fluids. "Would you prefer to live here, on Atema Six, or on Earth?"</p>
+        <p>As she says the names of the planets, she projects them in front of you. Earth is blue and green and brown, dulled by clouds; Atema Six glows with brilliant tones of swirling turquoise and deep green. When you squint, you think you can make out the base you live on, shining glass above the world. You suspect there’s a right answer and a wrong answer, but you’re not sure what they are.</p>
+        <p>You hesitate, the tip of your finger wavering between worlds. Your decision will be of no consequence; no-one decides their fate on the opinion of such a small child. And yet you feel there may be other consequences, too far away to see. So you answer with questions. You ask where each of your friends will be and what kind of lollies you can get on each planet and whether there are tanker days on earth, bombarding the air with possibilities.</p>
+        <p>"It’s not an easy decision, is it?" she says to you, and you shake your head, hoping for distraction, hoping to not have to make choices. The door mechanism hisses and your father enters. He pulls on a shirt and trousers, and your parents turn the monitor on and give you a snack and a bottle of water, even though you’re old enough to get your own.</p>
+        <p>When they leave, you press the button that draws open the curtain along the long glass wall, and you sit on your parents’ bed in near-darkness, with just the hint of your reflection visible in the window. It’s transposed against the blue and green gas licking up, against the dark of space, punctuated by stars.</p>
+        <p>You know somewhere inside you that you will not be here long, that some day soon your parents will pack up these three rooms and you will walk with them into a tanker, which will take you to an outpost, and from there you will begin the long journey back to Earth.</p>
+        <span class="continue cb"><button>Continue</button></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="aa">
+        <h2><i class="fa fa-rocket" aria-hidden="true"></i></h2>
+        <p>Matti is your best friend and people sometimes confuse the two of you, or pretend to - both of you with dark hair that spikes up at the slightest provocation, in your green school overalls. You’re both bad at drawing and good at algebra, constantly competing for the top marks, first you winning then Matti surging ahead fuelled by the horror that is second place.</p>
+        <p>Outside school you stalk the corridors together, co-conspirators, inventing stories to explain every mundane event and fragment of gossip. “See that case there?” Matti will say in hushed tones. “There’s a princess in that who’s fleeing for her life from a cruel father, and being smuggled across the galaxy to a colony where she will live as a farmer.”</p>
+        <p>“They’re discussing pirates,” you will say knowingly to Matti. “That’s why they’re flying out tonight, to surprise space pirates and slaughter them and take all their gold and then the base will be rich and we’ll be able to wear new clothes every single day, and never wear the same pair of shoes twice.”</p>
+        <p>You hear other phrases slip, like “left us out here unprotected” and “this equipment just isn’t safe” and “they’re trying to get out of paying what they promised, but the stories you spin from those are less exciting, so you leave them alone. You steal a bottle of sugar-syrup from the kitchen and drink it in the storage space behind the gym, sticky over your fingers, until you feel ill but don’t want to admit it because it tastes so good.</p>
+        <span class="continue caa"><button>Continue</button></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="bb">
+        <h2><i class="fa fa-rocket" aria-hidden="true"></i></h2>
+        <p>Matti is your best friend and people sometimes confuse the two of you, or pretend to - both of you with dark hair that spikes up at the slightest provocation, in your green school overalls. You’re both bad at drawing and good at algebra, constantly competing for the top marks, first you winning then Matti surging ahead fuelled by the horror that is second place.</p>
+        <p>Outside school you stalk the corridors together, co-conspirators, inventing stories to explain every mundane event and fragment of gossip. “See that case there?” Matti will say in hushed tones. “There’s a princess in that who’s fleeing for her life from a cruel father, and being smuggled across the galaxy to a colony where she will live as a farmer.”</p>
+        <p>“They’re discussing pirates,” you will say knowingly to Matti. “That’s why they’re flying out tonight, to surprise space pirates and slaughter them and take all their gold and then the base will be rich and we’ll be able to wear new clothes every single day, and never wear the same pair of shoes twice.”</p>
+        <p>You hear other phrases slip, like “left us out here unprotected” and “this equipment just isn’t safe” and “they’re trying to get out of paying what they promised, but the stories you spin from those are less exciting, so you leave them alone. You steal a bottle of sugar-syrup from the kitchen and drink it in the storage space behind the gym, sticky over your fingers, until you feel ill but don’t want to admit it because it tastes so good.</p>
+        <span class="continue cbb"><button>Continue</button></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="aaa">
+        <h2><i class="fa fa-rocket" aria-hidden="true"></i></h2>
+        <p>The whole base rocks with the explosion, broken glass singing. You’re alone in your tiny bedroom and the noise makes even the blood in your veins shake and you scream for it to stop, plugging your fingers in your ears. Everywhere has been plunged into darkness. Eventually - and it seems like hours though it may only have been minutes - someone darts into your room and you stop screaming if only in surprise. They grab you by the wrist and pull you out into the corridor.</p>
+        <p>The emergency lights are on, strips along the floor flickering behind the endless silhouettes of shoes walking across them. You’re pulled into the queue and follow them downwards, clinging to the railing of the back stairs so you don’t fall on the way down. Someone gives you a blanket and pushes you into a dark room, where people are huddling against the walls. The base is still ringing, a high note, endlesss. You can’t find your parents.</p>
+        <p>Eventually portable lights are brought in and turned on, casting layers of shadows around you. Water bottles are handed out, updates projected onto the ceiling, confirming the circulating rumours. This was no accident, but an act of war.</p>
+        <p>You sob quietly, telling yourself that you’re too old to cry like this.</p>
+        <span class="continue caaa"><button>Continue</button></span>
+      </div>
+    </div>
+        <div class="row">
+      <div class="aab">
+        <h2><i class="fa fa-rocket" aria-hidden="true"></i></h2>
+        <p>The whole base rocks with the explosion, broken glass singing. You’re alone in your tiny bedroom and the noise makes even the blood in your veins shake and you scream for it to stop, plugging your fingers in your ears. Everywhere has been plunged into darkness. Eventually - and it seems like hours though it may only have been minutes - someone darts into your room and you stop screaming if only in surprise. They grab you by the wrist and pull you out into the corridor.</p>
+        <p>The emergency lights are on, strips along the floor flickering behind the endless silhouettes of shoes walking across them. You’re pulled into the queue and follow them downwards, clinging to the railing of the back stairs so you don’t fall on the way down. Someone gives you a blanket and pushes you into a dark room, where people are huddling against the walls. The base is still ringing, a high note, endlesss. You can’t find your parents.</p>
+        <p>Arguments echo around; you hear the scuffling of feet.</p>
+        <p>“This is what happens when you skip maintenance,” says someone.</p>
+        <p>“Accidents happen. Let’s wait until we find the actual cause before we jump to conclusions,“ says another.</p>
+        <p>“You’ve blood on your hands, mate, blood on your hands.”</p>
+        <p>“You cower away, wishing you could press yourself through the wall, and out into the eternity of space.</p>
+        <span class="continue caab"><button>Continue</button></span>
+      </div>
+    </div>
+        <div class="row">
+      <div class="bba">
+        <h2><i class="fa fa-rocket" aria-hidden="true"></i></h2>
+        <p>The oxygenated air stretches thin with tension. You and Matti sneak into the back of meetings. Sometimes your mother is at the front, standing on a chair, in freshly laundered overalls.</p>
+        <p>“We won’t give in to threats,” she says, in one particularly crowded meeting. You crouch behind the crowd and hope you are too small for her to spot. “The only way to win this is to stand together. For us to get what we are owed, and to secure safety for us and our children.”</p>
+        <p>The meetings become more frequent. First small tasks are refused; forms are not submitted. Then everyone stops work for five minutes, then an hour, then whole shifts. You pose for picture, all serious faces, holding up your tablets with Please Keep Us Safe written on them in big red letters.</p>
+        <p>“Am I going to die,” you ask your parents, late one night. “If we don’t win, that means we might all die in an explosion.”</p>
+        <p>“If we don’t win,” your father replies, “we’ll be going far, far away from here.”</p>
+        <p>“Promise?”</p>
+        <p>“We promise,” they both say, almost in unison.</p>
+        <p>I’m so caught in relief that I don’t see the fear in their faces.</p>
+        <span class="continue cbba"><button>Continue</button></span>
+      </div>
+    </div>
+        <div class="row">
+      <div class="bbb">
+        <h2><i class="fa fa-rocket" aria-hidden="true"></i></h2>
+        <p>The oxygenated air stretches thin with tension. You and Matti sneak into the back of meetings. Sometimes Matti’s mother is at the front, standing on a chair, in freshly laundered overalls, her dark hair loose.</p>
+        <p>“We won’t give in to threats,” she says, in one particularly crowded meeting. Matti crouches behind you, hoping to be too small to spot. “The only way to win this is to stand together. For us to get what we are owed, and to secure safety for us and our children.”</p>
+        <p>Your father, a few rows in front, spots you, makes his way through the crowd, ushers you out.</p>
+        <p>“This is no place for you,” kid, he says.</p>
+        <p>But soon this place becomes everywhere, and even you children are involved. The meetings become more frequent. First small tasks are refused; forms are not submitted. Then everyone stops work for five minutes, then an hour, then whole shifts. You pose for picture, all serious faces, holding up your tablets with Please Keep Us Safe written on them in big red letters.</p>
+        <p>“Am I going to die,” you ask your parents, late one night. “If we don’t win, that means we might all die in an explosion.”</p>
+        <p>“We’ll all be fine,” your mother says. You want to believe her, but you can’t.</p>
+        <span class="continue cbbb"><button>Continue</button></span>
+      </div>
     </div>
   </body>
 </html>
