@@ -15,15 +15,7 @@
       var ranNum = Math.random()
       console.log("day", curDay)
       $(document).ready(function(){
-        $(".a").hide();
-        $(".b").hide();
-        $(".aa").hide();
-        $(".bb").hide();
-        $(".aaa").hide();
-        $(".aab").hide();
-        $(".bba").hide();
-        $(".bbb").hide();
-        $(".aaaa, .aaab, .aaba, .aabb, .bbaa, .bbab, .bbba, .bbbb").hide();
+        $(".a, .b, .aa, .bb, .aaa, .aab, .bba, .bbb, .aaaa, .aaab, .aaba, .aabb, .bbaa, .bbab, .bbba, .bbbb").hide();
         $(".czero").click(function(){
           $(".czero").hide();
           if (curHr < 12) {
@@ -88,6 +80,70 @@
             $(".bbbb").show();
           }
          });
+        $(".caaaa").click(function(){
+          $(".caaaa").hide();
+          if ($(window).width() <= 1000){
+            $(".aaaaa").show();
+          } else {
+            $(".aaaab").show();
+          }
+        });  
+        $(".caaab").click(function(){
+          $(".caaab").hide();
+          if ($(window).width() <= 1000){
+            $(".aaaba").show();
+          } else {
+            $(".aaabb").show();
+          }
+        }); 
+        $(".caaba").click(function(){
+          $(".caaaa").hide();
+          if ($(window).width() <= 1000){
+            $(".aaaaa").show();
+          } else {
+            $(".aaaab").show();
+          }
+        }); 
+        $(".caaaa").click(function(){
+          $(".caaaa").hide();
+          if ($(window).width() <= 1000){
+            $(".aaaaa").show();
+          } else {
+            $(".aaaab").show();
+          }
+        }); 
+        $(".caaaa").click(function(){
+          $(".caaaa").hide();
+          if ($(window).width() <= 1000){
+            $(".aaaaa").show();
+          } else {
+            $(".aaaab").show();
+          }
+        }); 
+        $(".caaaa").click(function(){
+          $(".caaaa").hide();
+          if ($(window).width() <= 1000){
+            $(".aaaaa").show();
+          } else {
+            $(".aaaab").show();
+          }
+        }); 
+        $(".caaaa").click(function(){
+          $(".caaaa").hide();
+          if ($(window).width() <= 1000){
+            $(".aaaaa").show();
+          } else {
+            $(".aaaab").show();
+          }
+        }); 
+        $(".caaaa").click(function(){
+          $(".caaaa").hide();
+          if ($(window).width() <= 1000){
+            $(".aaaaa").show();
+          } else {
+            $(".aaaab").show();
+          }
+        }); 
       });
     </script>
   </head>
